@@ -81,9 +81,17 @@ format: revealjs
 
 **→ Anything an NFA can do can also be done by a DFA.**
 
----
-format: revealjs
----
+## What is an ε-Transition?
+- An **ε-transition** lets an NFA move to another state **without reading any input**.
+- The machine can “branch” instantly, creating multiple possible current states.
+- This is one source of **nondeterminism** in NFAs.
+
+## Correct Understanding & Use of ε-Transition:
+- Before reading a symbol, the NFA must take **all possible ε-moves** (ε-closure).
+- Then it reads the next input symbol from *every* reachable state.
+- ε-transitions help build complex NFAs for:
+  - regex union, concatenation, Kleene star  
+  - optional patterns and branching structures
 
 ## Nondeterminism: Efficiency vs Computability
 
@@ -101,12 +109,6 @@ format: revealjs
 but it can reduce the time needed to solve it.**
 
 
-
-## Steps we took to understand 
-
-## How We Confirmed Understanding?
-(we can include with understanding)
-
 ##  Practical Applications
 
 Real-world uses:
@@ -120,6 +122,8 @@ Real-world uses:
 ## Key Takeaway!
 
 - NFAs do not literally clone, it is a metaphor, and they are not random, it is complete exploration.
+- - ε-transitions let an NFA move **without consuming input**.
+- - ε-transitions don’t make the machine random—it's **complete exploration**, not guessing.
 
 
 ## Any Questions?
