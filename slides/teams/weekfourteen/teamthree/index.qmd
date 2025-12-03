@@ -18,12 +18,16 @@ format:
     footer: "Proofgrammers"
 ---
 
-## What confused us about nondeterminism?
-
-
+## What topic confused us ?
+- Nondeterminism concepts, especially the idea that the machine can “branch,” “clone,” or follow multiple possible transitions at once in NFAs.
 
 ## Why This Was Confusing?
 
+- The “cloning” idea made it feel like the machine had **superpowers**
+- It seemed like the NFA could explore **all paths at once**, unlike real computers
+- We kept mixing up nondeterminism with **randomness** and **parallelism**
+- NFAs *looked* more powerful than DFAs, so the claim “they are equivalent” did not feel intuitive at first
+- At first, we treated cloning as something **physical** instead of a **mathematical model** for tracking many possible states
 (we can include slides)
 
 ## Steps we took to understand 
@@ -32,8 +36,16 @@ format:
 (we can include with understanding)
 
 ##  Practical Applications
+
 Real-world uses:
 
+- Games & puzzles: Model possible moves as branches to explore winning paths.
+- Testing / fuzzing: Represent many input possibilities to generate test cases.
+- Teaching: “Cloning” states helps students see how many paths are tracked at once.
+- Find & Replace: Alternation (a|b) and optional parts modeled by nondeterministic choices
+
+
 ## Key Takeaway!
+
 
 ## Any Questions?
