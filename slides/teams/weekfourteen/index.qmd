@@ -1,0 +1,39 @@
+---
+title: "Understanding Nondeterminism: NFAs, Cloning, and Equivalence"
+description: "Exploring Non-Determinism"
+date: "2025-11-04"
+date-format: long
+author: Duru Akbas, Ritesh Ojha, Issei Hasegawa
+execute:
+  echo: true
+format:
+  live-revealjs:
+    completion: true
+    theme: default
+    css: ../../../css/styles.css
+    history: false
+    scrollable: true
+    transition: slide
+    highlight-style: github
+    footer: "Proofgrammers"
+---
+
+## What confused us about nondeterminism?
+
+
+
+## Why This Was Confusing?
+
+(we can include slides)
+
+## Steps we took to understand 
+
+## How We Confirmed Understanding?
+(we can include with understanding)
+
+##  Practical Applications
+Real-world uses:
+
+## Key Takeaway!
+
+## Any Questions?
