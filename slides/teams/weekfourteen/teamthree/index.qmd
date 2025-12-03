@@ -64,6 +64,23 @@ format:
 - Nondeterminism: Explores all possible transitions 
 - Randomness: pick one outcome unpredictably
 
+---
+format: revealjs
+---
+
+## NFA and DFA: Same Expressive Power
+
+• NFAs and DFAs behave differently,  
+  but they recognize **exactly the same languages**.
+
+• A DFA simulates all nondeterministic choices of an NFA  
+  by treating a **set of NFA states as one DFA state**.
+
+• This “subset construction” covers every possible path  
+  and always works.
+
+**→ Anything an NFA can do can also be done by a DFA.**
+
 
 ## Steps we took to understand 
 
