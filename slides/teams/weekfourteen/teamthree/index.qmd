@@ -59,12 +59,6 @@ format:
 - Multiple states = multiple bookmarks
 - This shows how nondeterminism is not randomness, it is about tracking possibilities.
 
-## Nondeterminism vs. Randomness
-
-- Nondeterminism: Explores all possible transitions 
-- Randomness: pick one outcome unpredictably
-
-
 ## NFA and DFA: Same Expressive Power
 
 -NFAs and DFAs make transitions differently, but they recognize exactly the same languages.
