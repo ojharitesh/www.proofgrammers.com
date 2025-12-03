@@ -64,6 +64,43 @@ format:
 - Nondeterminism: Explores all possible transitions 
 - Randomness: pick one outcome unpredictably
 
+---
+format: revealjs
+---
+
+## NFA and DFA: Same Expressive Power
+
+• NFAs and DFAs behave differently,  
+  but they recognize **exactly the same languages**.
+
+• A DFA simulates all nondeterministic choices of an NFA  
+  by treating a **set of NFA states as one DFA state**.
+
+• This “subset construction” covers every possible path  
+  and always works.
+
+**→ Anything an NFA can do can also be done by a DFA.**
+
+---
+format: revealjs
+---
+
+## Nondeterminism: Efficiency vs Computability
+
+• Nondeterminism can **improve efficiency**, but it does **not** change computability.
+
+• Computability asks whether a problem can be solved at all;  
+  nondeterminism cannot make an unsolvable problem solvable or create new solvable problems.
+
+• What it *can* do is speed things up in practice by exploring  
+  **multiple paths at the same time**.
+
+• For example, parallel checks or searches may reach a positive result sooner.
+
+**→ Nondeterminism does not change what is solvable,  
+but it can reduce the time needed to solve it.**
+
+
 
 ## Steps we took to understand 
 
