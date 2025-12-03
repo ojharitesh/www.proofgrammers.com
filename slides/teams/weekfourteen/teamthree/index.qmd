@@ -67,16 +67,10 @@ format:
 
 ## NFA and DFA: Same Expressive Power
 
-• NFAs and DFAs behave differently,  
-  but they recognize **exactly the same languages**.
-
-• A DFA simulates all nondeterministic choices of an NFA  
-  by treating a **set of NFA states as one DFA state**.
-
-• This “subset construction” covers every possible path  
-  and always works.
-
-**→ Anything an NFA can do can also be done by a DFA.**
+-NFAs and DFAs make transitions differently, but they recognize exactly the same languages.
+-An NFA may follow multiple possible moves, while a DFA always has one.
+-Still, a DFA can track all possibilities the NFA could reach, so it makes the same accept/reject decisions.
+**→ Therefore, NFAs and DFAs have equal expressive power.**
 
 ## What is an ε-Transition?
 - An **ε-transition** lets an NFA move to another state **without reading any input**.
@@ -93,15 +87,11 @@ format:
 ## Nondeterminism: Efficiency vs Computability
 
 • Nondeterminism can **improve efficiency**, but it does **not** change computability.
-
 • Computability asks whether a problem can be solved at all;  
   nondeterminism cannot make an unsolvable problem solvable or create new solvable problems.
-
 • What it *can* do is speed things up in practice by exploring  
   **multiple paths at the same time**.
-
 • For example, parallel checks or searches may reach a positive result sooner.
-
 **→ Nondeterminism does not change what is solvable,  
 but it can reduce the time needed to solve it.**
 
@@ -121,6 +111,8 @@ Real-world uses:
 - NFAs do not literally clone, it is a metaphor, and they are not random, it is complete exploration.
 - - ε-transitions let an NFA move **without consuming input**.
 - - ε-transitions don’t make the machine random—it's **complete exploration**, not guessing.
+- NFAs and DFAs have the same expressive power and recognize exactly the same languages.
+- Nondeterminism cannot change what is computable, but it can improve efficiency.
 
 
 ## Any Questions?
