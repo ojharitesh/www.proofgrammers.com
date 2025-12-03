@@ -30,6 +30,41 @@ format:
 - At first, we treated cloning as something **physical** instead of a **mathematical model** for tracking many possible states
 (we can include slides)
 
+:::
+
+## Key Concepts of Nondeterminism
+
+- **Multiple possible states:** There are multiple "possible" states after the state that NFA is currently in.
+- **Cloning is a metaphor:** NFAs do not duplicate itself, we just track all the possible states.
+- **Nondeterminism is not randomness:** NFAs do not choose randomly, they consider all valid paths.
+
+:::
+
+## How does NFA clone itself?
+
+::: center
+![Nondeterminism Diagram](nondeterminism.png)
+
+- **"Cloning":** It does not physically happen, it branches into next possible states.
+- For instance, if from state `q` on symbol `a` you can go to `{q1, q2}`, and NFA sees them as both active states simultaneously.
+
+:::
+
+## Book Example
+
+- Imagine you are given 2 choices:
+  - Go to page 4
+  - Go to oage 40
+- You do not split into two, you just place two bookmarks.
+- Multiple states = multiple bookmarks
+- This shows how nondeterminism is not randomness, it is about tracking possibilities.
+
+## Nondeterminism vs. Randomness
+
+- Nondeterminism: Explores all possible transitions 
+- Randomness: pick one outcome unpredictably
+
+
 ## Steps we took to understand 
 
 ## How We Confirmed Understanding?
@@ -46,6 +81,8 @@ Real-world uses:
 
 
 ## Key Takeaway!
+
+- NFAs do not literally clone, it is a metaphor, and they are not random, it is complete exploration.
 
 
 ## Any Questions?
