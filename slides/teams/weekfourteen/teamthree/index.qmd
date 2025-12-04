@@ -105,5 +105,9 @@ Real-world uses:
 - NFAs and DFAs have the same expressive power and recognize exactly the same languages.
 - Nondeterminism cannot change what is computable, but it can improve efficiency.
 
+## References
+
+- [Introduction to the Theory of Computation](https://cs.brown.edu/courses/csci1810/fall-2023/resources/ch2_readings/Sipser_Introduction.to.the.Theory.of.Computation.3E.pdf)
+
 
 ## Any Questions?
