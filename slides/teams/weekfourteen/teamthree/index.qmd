@@ -30,7 +30,6 @@ format:
 - At first, we treated cloning as something **physical** instead of a **mathematical model** for tracking many possible states
 (we can include slides)
 
-:::
 
 ## Key Concepts of Nondeterminism
 
@@ -38,7 +37,6 @@ format:
 - **Cloning is a metaphor:** NFAs do not duplicate itself, we just track all the possible states.
 - **Nondeterminism is not randomness:** NFAs do not choose randomly, they consider all valid paths.
 
-:::
 
 ## How does NFA clone itself?
 
@@ -54,17 +52,17 @@ format:
 
 - Imagine you are given 2 choices:
   - Go to page 4
-  - Go to oage 40
+  - Go to page 40
 - You do not split into two, you just place two bookmarks.
 - Multiple states = multiple bookmarks
 - This shows how nondeterminism is not randomness, it is about tracking possibilities.
 
 ## NFA and DFA: Same Expressive Power
 
--NFAs and DFAs make transitions differently, but they recognize exactly the same languages.
--An NFA may follow multiple possible moves, while a DFA always has one.
--Still, a DFA can track all possibilities the NFA could reach, so it makes the same accept/reject decisions.
-**→ Therefore, NFAs and DFAs have equal expressive power.**
+- NFAs and DFAs make transitions differently, but they recognize exactly the same languages.
+- An NFA may follow multiple possible moves, while a DFA always has one.
+- Still, a DFA can track all possibilities the NFA could reach, so it makes the same accept/reject decisions.
+ **→ Therefore, NFAs and DFAs have equal expressive power.**
 
 ## What is an ε-Transition?
 - An **ε-transition** lets an NFA move to another state **without reading any input**.
@@ -78,16 +76,15 @@ format:
   - regex union, concatenation, Kleene star  
   - optional patterns and branching structures
 
-## Nondeterminism: Efficiency vs Computability
+## Efficiency vs Computability
 
-• Nondeterminism can **improve efficiency**, but it does **not** change computability.
-• Computability asks whether a problem can be solved at all;  
-  nondeterminism cannot make an unsolvable problem solvable or create new solvable problems.
-• What it *can* do is speed things up in practice by exploring  
+- Nondeterminism can **improve efficiency**, but it does **not** change computability.
+- Computability asks whether a problem can be solved at all;  
+-  nondeterminism cannot make an unsolvable problem solvable or create new solvable problems.
+- What it *can* do is speed things up in practice by exploring  
   **multiple paths at the same time**.
-• For example, parallel checks or searches may reach a positive result sooner.
-**→ Nondeterminism does not change what is solvable,  
-but it can reduce the time needed to solve it.**
+- For example, parallel checks or searches may reach a positive result sooner.
+**→ Nondeterminism does not change what is solvable, but it can reduce the time needed to solve it.**
 
 
 ##  Practical Applications
@@ -103,8 +100,8 @@ Real-world uses:
 ## Key Takeaway!
 
 - NFAs do not literally clone, it is a metaphor, and they are not random, it is complete exploration.
-- - ε-transitions let an NFA move **without consuming input**.
-- - ε-transitions don’t make the machine random—it's **complete exploration**, not guessing.
+  - ε-transitions let an NFA move **without consuming input**.
+  - ε-transitions don’t make the machine random—it's **complete exploration**, not guessing.
 - NFAs and DFAs have the same expressive power and recognize exactly the same languages.
 - Nondeterminism cannot change what is computable, but it can improve efficiency.
 
